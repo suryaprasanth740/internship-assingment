@@ -1,0 +1,361 @@
+!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>SURYA PRASANTH G | Portfolio & Resume</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+      font-family: Arial, sans-serif;
+    }
+
+    body {
+      background: #0f172a;
+      color: #e5e7eb;
+      line-height: 1.6;
+    }
+
+    header {
+      background: #020617;
+      padding: 15px 8%;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      position: sticky;
+      top: 0;
+      z-index: 10;
+    }
+
+    header h1 {
+      font-size: 1.4rem;
+      color: #38bdf8;
+    }
+
+    nav a {
+      color: #e5e7eb;
+      text-decoration: none;
+      margin-left: 20px;
+      font-size: 0.95rem;
+    }
+
+    nav a:hover {
+      color: #38bdf8;
+    }
+
+    section {
+      padding: 50px 8%;
+      max-width: 1100px;
+      margin: auto;
+    }
+
+    .hero {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      gap: 40px;
+    }
+
+    .hero-text {
+      flex: 1 1 260px;
+    }
+
+    .hero-text h2 {
+      font-size: 2.2rem;
+      margin-bottom: 10px;
+    }
+
+    .hero-text h3 {
+      font-size: 1.2rem;
+      color: #38bdf8;
+      margin-bottom: 15px;
+    }
+
+    .hero-text p {
+      margin-bottom: 20px;
+      color: #cbd5f5;
+    }
+
+    .hero-buttons a {
+      display: inline-block;
+      padding: 10px 18px;
+      margin-right: 10px;
+      border-radius: 4px;
+      font-size: 0.95rem;
+      text-decoration: none;
+      transition: 0.9s;
+    }
+
+    .btn-outline {
+      border: 1px solid #38bdf8;
+      color: #e5e7eb;
+    }
+
+    .btn-outline:hover {
+      background: #1e293b;
+    }
+
+    .hero-photo {
+      flex: 0 1 260px;
+      text-align: center;
+    }
+
+    .hero-photo img {
+      width: 220px;
+      height: 220px;
+      border-radius: 50%;
+      border: 3px solid #38bdf8;
+      object-fit: cover;
+      display: block;
+      margin: 0 auto 15px auto;
+    }
+
+    .resume-link {
+      display: inline-block;
+      margin-top: 5px;
+      padding: 8px 14px;
+      border-radius: 4px;
+      border: 1px solid #38bdf8;
+      color: #e5e7eb;
+      text-decoration: none;
+      font-size: 0.9rem;
+    }
+
+    .resume-link:hover {
+      background: #1e293b;
+    }
+
+    h2.section-title {
+      font-size: 1.6rem;
+      margin-bottom: 20px;
+      color: #f9fafb;
+    }
+
+    .about p {
+      margin-bottom: 10px;
+      color: #cbd5f5;
+    }
+
+    .card-list {
+      list-style: none;
+      margin-top: 10px;
+    }
+
+    .card-list li {
+      padding: 8px 10px;
+      margin-bottom: 8px;
+      background: #020617;
+      border-radius: 4px;
+      border-left: 3px solid #38bdf8;
+      color: #e5e7eb;
+    }
+
+    .card-list li span {
+      display: block;
+      font-size: 0.85rem;
+      color: #9ca3af;
+      margin-top: 4px;
+    }
+
+    .contact p {
+      margin-bottom: 8px;
+      color: #cbd5f5;
+    }
+
+    .contact a {
+      color: #38bdf8;
+      text-decoration: none;
+    }
+
+    .contact a:hover {
+      text-decoration: underline;
+    }
+
+    /* Resume section */
+    .resume {
+      background: #020617;
+      border-radius: 6px;
+      padding: 30px;
+    }
+
+    .resume h3 {
+      font-size: 1.2rem;
+      color: #38bdf8;
+      margin-bottom: 10px;
+    }
+
+    .resume h4 {
+      font-size: 1rem;
+      margin-top: 18px;
+      margin-bottom: 6px;
+      color: #e5e7eb;
+    }
+
+    .resume ul {
+      margin-left: 18px;
+      margin-bottom: 8px;
+    }
+
+    .resume li {
+      margin-bottom: 4px;
+    }
+
+    footer {
+      text-align: center;
+      padding: 15px 8%;
+      background: #020617;
+      color: #6b7280;
+      font-size: 0.85rem;
+    }
+
+    @media (max-width: 700px) {
+      header {
+        flex-direction: column;
+        align-items: flex-start;
+      }
+
+      nav {
+        margin-top: 8px;
+      }
+
+      .hero {
+        flex-direction: column-reverse;
+      }
+
+      .hero-text h2 {
+        font-size: 1.8rem;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>SURYA PRASANTH G</h1>
+    <nav>
+      <a href="#home">Home</a>
+      <a href="#about">About</a>
+      <a href="#education">Education</a>
+      <a href="#skills">Skills</a>
+      <a href="#resume">Resume</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <!-- HOME / HERO -->
+  <section id="home" class="hero">
+    <div class="hero-text">
+      <h2>Hello, I'm SURYA PRASANTH G</h2>
+      <h3>Web Developer | Programmer</h3>
+      <p>
+        Student at Acharya Polytechnic, Bangalore (2023 - 2026) and passionate about
+        web development, programming, and creative multimedia projects.
+      </p>
+      <div class="hero-buttons">
+        <a href="#contact" class="btn-outline">Contact Me</a>
+      </div>
+    </div>
+
+    <!-- Photo + download link -->
+    <div class="hero-photo">
+      <img src="WhatsApp Image 2026-01-30 at 10.35.57 AM.jpeg" alt="SURYA PRASANTH G">
+      <!-- keep maneesh-resume.docx in the same folder as this HTML file -->
+      
+    </div>
+  </section>
+
+  <!-- ABOUT -->
+  <section id="about" class="about">
+    <h2 class="section-title">About Me</h2>
+    <p>
+      I am a diploma student at Acharya Polytechnic, Bangalore, focused on building strong
+      foundations in programming, databases, and web technologies.
+    </p>
+    <p>
+      I enjoy creating websites, working with DBMS concepts, and exploring multimedia
+      and animation tools to design interactive experiences.
+    </p>
+  </section>
+
+  <!-- EDUCATION -->
+  <section id="education">
+    <h2 class="section-title">Education</h2>
+    <ul class="card-list">
+      <li>
+        Acharya Polytechnic, Bengaluru
+        <span>Diploma (Pursuing) • 2023 - 2026</span>
+      </li>
+      <li>
+        BDMHS school,arakkonam
+        <span>Schooling Completed</span>
+      </li>
+    </ul>
+  </section>
+
+  <!-- SKILLS -->
+  <section id="skills">
+    <h2 class="section-title">Skills</h2>
+    <ul class="card-list">
+      <li>HTML, CSS</li>
+      <li>Java, Python</li>
+      <li>Computer Networks</li>
+      <li>Database Management Systems (DBMS)</li>
+      <li>Operating Systems</li>
+      <li>Computer Hardware</li>
+      <li>Multimedia & Animation</li>
+    </ul>
+  </section>
+
+  <!-- RESUME (inline content) -->
+  <section id="resume">
+    <h2 class="section-title">Resume</h2>
+    <div class="resume">
+      <h3>SURYA PRASANTH G</h3>
+      <p>Mobile: 7708989750 | Email: mail2suryaprasanth@gmail.com | Bengaluru, India</p>
+
+      <h4>Professional Objective</h4>
+      <p>
+        Motivated and dedicated polytechnic student with a strong foundation in computer
+        science, networking, and system fundamentals, seeking opportunities to apply
+        technical skills and gain practical exposure in a growth‑oriented organization.
+      </p>
+
+      <h4>Education</h4>
+      <ul>
+        <li>Acharya Polytechnic, Bengaluru – Diploma (Pursuing)</li>
+        <li>BDMHS school, Arakkonam – Schooling Completed</li>
+      </ul>
+
+      <h4>Technical Skills</h4>
+      <ul>
+        <li>HTML, CSS</li>
+        <li>Java, Python</li>
+        <li>Computer Networks</li>
+        <li>Database Management Systems (DBMS)</li>
+        <li>Operating Systems</li>
+        <li>Computer Hardware</li>
+        <li>Multimedia and Animation</li>
+      </ul>
+
+      <h4>Declaration</h4>
+      <p>
+        I hereby declare that the information provided above is true and correct to the
+        best of my knowledge and belief.
+      </p>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section id="contact" class="contact">
+    <h2 class="section-title">Contact</h2>
+    <p>Email: <a href="mailto:mail2suryaprasanth@gmail.com">mail2suryaprasanth@gmail.com</a></p>
+    <p>Phone: +91-7708989750</p>
+    <p>Location: Bengaluru, India</p>
+  </section>
+
+  <footer>
+    ©️ 2026 SURYA PRASANTH G . All rights reserved.
+  </footer>
+</body>
+</html>
